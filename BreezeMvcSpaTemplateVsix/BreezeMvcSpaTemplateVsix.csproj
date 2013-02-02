@@ -110,8 +110,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages\Breeze.WebApi.1.0.1.nupkg" />
-    <None Include="packages\WebActivator.1.5.3.nupkg" />
+    <Content Include="packages\Breeze.WebApi.1.0.1.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\WebActivator.1.5.3.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Areas\HelpPage\Views\_ViewStart.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>

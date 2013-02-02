@@ -17,17 +17,17 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="packages\Breeze.WebApi.1.0.1.nupkg" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="packages\WebActivator.1.5.3.nupkg" />
-
+    
     <Asset d:VsixSubPath="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml"
-               Type="Microsoft.VisualStudio.Mvc.Templates"
+               Type="Microsoft.VisualStudio.Mvc.Template"
                d:Source="File"
                Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\BreezeMvcSpaProjectTemplate.cshtml.vstemplate"
                ProjectType="MVC"
                Language="C#"
                ViewEngine="Razor"
                TemplateId="BreezeMvcSpaApplication"
-               Title="Single Page Application with Breeze.js"
-               Description="Single Page Application with Knockout and Breeze"
+               Title="Breeze Single Page Application"
+               Description="An ASP.NET MVC 4 project for a single page application with Knockout and BreezeJS"
                Version="4.0"/>
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\App_Start\AuthConfig.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\App_Start\BundleConfig.SinglePage.cs" />

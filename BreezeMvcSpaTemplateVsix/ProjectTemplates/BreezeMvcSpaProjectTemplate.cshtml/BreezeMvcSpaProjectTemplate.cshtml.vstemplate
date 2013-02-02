@@ -7,7 +7,7 @@
         <ProjectSubType>Web</ProjectSubType>
         <TemplateGroupID>Web</TemplateGroupID>
         <TemplateID>IdeaBlade.WAP.Cshtml.BreezeSpaApplication.v401</TemplateID>
-        <!--<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>-->
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
         <SortOrder>1000</SortOrder>
         <CreateNewFolder>true</CreateNewFolder>
         <DefaultName>BreezeMvcSpaApplication</DefaultName>
@@ -16,7 +16,7 @@
         <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
         <RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
-        <!--<Hidden>true</Hidden>-->
+        <Hidden>true</Hidden>
     </TemplateData>
     <TemplateContent>
         <CustomParameters>
@@ -148,7 +148,7 @@
             <package id="WebGrease" version="1.3.0" skipAssemblyReferences="true" />
             <package id="knockoutjs" version="2.2.0" />
         </packages>
-        <packages repository="extension" keyName="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" isPreunzipped="true">
+        <packages repository="extension" repositoryId="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" isPreunzipped="true">
           <package id="WebActivator" version="1.5.3" skipAssemblyReferences="true" />
           <package id="Breeze.WebApi" version="1.0.1" skipAssemblyReferences="true" />
         </packages>
