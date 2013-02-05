@@ -110,7 +110,7 @@
         <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
     </WizardExtension>
     <WizardData>
-        <packages repository="registry" keyName="AspNetMvc4VS11" isPreunzipped="true">
+        <packages repository="registry" keyName="AspNetMvc4VS11" >
             <package id="EntityFramework" version="5.0.0" skipAssemblyReferences="true" />
             <package id="jQuery" version="1.8.2" />
             <package id="jQuery.Validation" version="1.10.0" />
@@ -148,7 +148,7 @@
             <package id="WebGrease" version="1.3.0" skipAssemblyReferences="true" />
             <package id="knockoutjs" version="2.2.0" />
         </packages>
-        <packages repository="extension" repositoryId="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" isPreunzipped="true">
+        <packages repository="extension" repositoryId="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" >
           <package id="WebActivator" version="1.5.3" skipAssemblyReferences="true" />
           <package id="Breeze.WebApi" version="1.0.1" skipAssemblyReferences="true" />
         </packages>
