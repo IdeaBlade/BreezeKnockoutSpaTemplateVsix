@@ -27,6 +27,7 @@ button, input[type=submit] {
 /*#region Header */
 
 header {
+    text-align: center;
     margin: 0 .7em;
     position: relative;
 }
@@ -35,6 +36,10 @@ header {
         font-size: 2.5em;
         margin: 0;
     }
+
+#body {
+    clear: both;
+}
 
 #userSettings {
     float: right;
