@@ -30,9 +30,10 @@
         // GET ~/api/Todo/TodoList
         [HttpGet]
         public IQueryable<TodoList> TodoLists() {
-            return _repository.TodoLists
-                //.Include("Todos")// do it client-side
-                .OrderByDescending(t => t.TodoListId);
+            return _repository.TodoLists;
+            // We do the following on the client
+            //.Include("Todos")
+            //.OrderByDescending(t => t.TodoListId);
         }
     }
 }

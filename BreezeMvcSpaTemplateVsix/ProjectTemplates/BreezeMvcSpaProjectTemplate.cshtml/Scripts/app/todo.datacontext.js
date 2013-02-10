@@ -24,7 +24,8 @@ window.todoApp.datacontext = (function (breeze) {
     //#region Private Members
     function getTodoLists(todoListsObservable, errorObservable) {
         return breeze.EntityQuery
-            .from("TodoLists").expand("Todos")  
+            .from("TodoLists").expand("Todos")
+            .orderBy("todoListId desc")
             .using(manager).execute()
             .then(getSucceeded)
             .fail(getFailed);
