@@ -39,20 +39,20 @@ window.todoApp.datacontext = (function (breeze) {
         }
     }
     
-    function createTodoItem(initialValues) {
-        return manager.createEntity("TodoItem", initialValues);
+    function createTodoItem() {
+        return manager.createEntity("TodoItem");
     }
-    
-    function createTodoList(initialValues) {
-        return manager.createEntity("TodoList", initialValues);
+
+    function createTodoList() {
+        return manager.createEntity("TodoList");
     }
-    
+
     function saveNewTodoItem(todoItem) {
-        return saveEntity(manager.addEntity(todoItem));
+        return saveEntity(todoItem);
     }
-    
+
     function saveNewTodoList(todoList) {
-        return saveEntity(manager.addEntity(todoList));
+        return saveEntity(todoList);
     }
     
     function deleteTodoItem(todoItem) {
