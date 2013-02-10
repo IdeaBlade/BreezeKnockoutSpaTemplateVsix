@@ -150,7 +150,7 @@
         </packages>
         <packages repository="extension" repositoryId="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" >
           <package id="WebActivator" version="1.5.3" skipAssemblyReferences="true" />
-          <package id="Breeze.WebApi" version="1.1.0" skipAssemblyReferences="true" />
+          <package id="Breeze.WebApi" version="1.1.1" skipAssemblyReferences="true" />
         </packages>
     </WizardData>
 </VSTemplate>
