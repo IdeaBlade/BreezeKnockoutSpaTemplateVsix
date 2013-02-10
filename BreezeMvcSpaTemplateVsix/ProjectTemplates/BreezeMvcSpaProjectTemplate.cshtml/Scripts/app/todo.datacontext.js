@@ -104,14 +104,16 @@ window.todoApp.datacontext = (function (breeze) {
     }
     
     function configureManagerToSaveModifiedItemImmediately() {
-        manager.entityChanged.subscribe(function (args) {
+        manager.entityChanged.subscribe(entityStateChanged);
+        
+        function entityStateChanged(args) {
             if (args.entityAction === breeze.EntityAction.EntityStateChange) {
                 var entity = args.entity;
                 if (entity.entityAspect.entityState.isModified()) {
                     saveEntity(entity);
                 }
             }
-        });
+        }
     }   
     //#endregion
     
