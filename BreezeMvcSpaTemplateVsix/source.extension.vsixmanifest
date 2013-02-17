@@ -7,6 +7,7 @@
     <MoreInfo>http://www.breezejs.com/spa-template?utm_source=vsix</MoreInfo>
     <License>license.txt</License>
     <Icon>__VsixIcon.ico</Icon>
+    <PreviewImage>BreezeLogo125.png</PreviewImage>
     <Tags>Breeze SPA MVC</Tags>
   </Metadata>
   <Installation>
