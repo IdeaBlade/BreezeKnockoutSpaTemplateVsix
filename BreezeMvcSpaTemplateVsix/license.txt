@@ -1,0 +1,2 @@
+Copyright 2013 IdeaBlade, Inc.
+The Breeze MVC4 Single Page Application template is licensed under the MIT license (http://opensource.org/licenses/mit-license.php).

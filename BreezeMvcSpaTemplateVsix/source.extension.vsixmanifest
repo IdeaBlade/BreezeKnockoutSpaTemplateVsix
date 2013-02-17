@@ -1,15 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" Version="1.0.1" Language="en-US" Publisher="IdeaBlade" />
+    <Identity Id="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" Version="1.0.0" Language="en-US" Publisher="IdeaBlade" />
     <DisplayName>BreezeMvcSpa</DisplayName>
     <Description xml:space="preserve">Adds ASP.NET MVC4 Single Page Application (SPA) template using Breeze for data management</Description>
     <MoreInfo>http://www.breezejs.com/spa-template?utm_source=vsix</MoreInfo>
+    <License>license.txt</License>
     <Icon>__VsixIcon.ico</Icon>
     <Tags>Breeze SPA MVC</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+    <InstallationTarget Version="[11.0,12.0)" Id="Microsoft.VisualStudio.VWDExpress" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />

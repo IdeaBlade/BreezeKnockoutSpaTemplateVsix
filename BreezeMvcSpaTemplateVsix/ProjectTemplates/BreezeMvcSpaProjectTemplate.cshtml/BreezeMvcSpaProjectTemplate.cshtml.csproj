@@ -129,7 +129,7 @@
     </Reference>
     <Reference Include="System.Web.Http.Tracing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>$nugetpackagesfolder$Microsoft.AspNet.WebApi.Tracing.4.0.0-rtm\lib\net40\System.Web.Http.Tracing.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$Microsoft.AspNet.WebApi.Tracing.4.0.0\lib\net40\System.Web.Http.Tracing.dll</HintPath>
     </Reference>
     <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">                                
       <Private>True</Private>                                                                                                                                                             
@@ -190,19 +190,19 @@
     $endif$
     <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>$nugetpackagesfolder$Microsoft.AspNet.WebApi.OData.4.0.0-rtm\lib\net40\System.Web.Http.OData.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$Microsoft.AspNet.WebApi.OData.4.0.0\lib\net40\System.Web.Http.OData.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>$nugetpackagesfolder$Microsoft.Data.Edm.5.2.0-rc1\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>$nugetpackagesfolder$Microsoft.Data.OData.5.2.0-rc1\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
     </Reference>
     <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>$nugetpackagesfolder$System.Spatial.5.2.0-rc1\lib\net40\System.Spatial.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">                                                                                                                                                       
       <Private>True</Private>                                                                                                                                                             

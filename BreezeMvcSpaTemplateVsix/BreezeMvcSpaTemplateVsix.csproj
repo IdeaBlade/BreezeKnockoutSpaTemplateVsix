@@ -42,6 +42,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="license.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\App_Start\AuthConfig.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -207,6 +211,7 @@
     <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\BreezeMvcSpaProjectTemplate.cshtml.csproj">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\BreezeMvcSpaProjectTemplate.cshtml.vstemplate">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
