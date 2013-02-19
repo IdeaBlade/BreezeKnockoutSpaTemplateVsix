@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreezeMvcSpaTemplateVsix", "BreezeMvcSpaTemplateVsix\BreezeMvcSpaTemplateVsix.csproj", "{B72C31B9-A997-41A3-96F9-7A4EF93972A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "breezetemplate", "BreezeMvcSpaTemplateVsix\breezetemplate.csproj", "{B72C31B9-A997-41A3-96F9-7A4EF93972A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

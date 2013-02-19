@@ -14,8 +14,8 @@
     <ProjectGuid>{B72C31B9-A997-41A3-96F9-7A4EF93972A0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BreezeMvcSpa</RootNamespace>
-    <AssemblyName>BreezeMvcSpa</AssemblyName>
+    <RootNamespace>breezetemplate</RootNamespace>
+    <AssemblyName>breezetemplate</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
