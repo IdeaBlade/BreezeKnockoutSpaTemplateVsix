@@ -1,4 +1,5 @@
-﻿window.todoApp.todoListViewModel = (function (ko, datacontext) {
+﻿/* Defines the Todo application ViewModel */
+window.todoApp.todoListViewModel = (function (ko, datacontext) {
     var todoLists = ko.observableArray(),
         error = ko.observable(),
         addTodoList = function () {

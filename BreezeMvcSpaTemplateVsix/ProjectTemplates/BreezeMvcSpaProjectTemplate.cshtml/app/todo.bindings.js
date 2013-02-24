@@ -1,9 +1,4 @@
-﻿// Hooks up a form to jQuery Validation
-ko.bindingHandlers.validate = {
-    init: function (elem, valueAccessor) {
-        $(elem).validate();
-    }
-};
+﻿/* bindings: extends KO with custom data bindings */
 
 // Controls whether or not the text in a textbox is selected based on a model property
 ko.bindingHandlers.selected = {

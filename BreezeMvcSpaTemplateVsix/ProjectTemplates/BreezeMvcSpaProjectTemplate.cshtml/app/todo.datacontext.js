@@ -1,6 +1,5 @@
-﻿window.todoApp = window.TodoApp || {};
-
-window.todoApp.datacontext = (function (breeze) {
+﻿/* datacontext: data access and model management layer */
+window.todoApp.datacontext = (function (breeze, model) {
 
     breeze.NamingConvention.camelCase.setAsDefault();
 
@@ -19,6 +18,7 @@ window.todoApp.datacontext = (function (breeze) {
         deleteTodoList: deleteTodoList
     };
 
+    model.initializeModel(datacontext);
     return datacontext;
 
     //#region Private Members
@@ -117,4 +117,4 @@ window.todoApp.datacontext = (function (breeze) {
     }   
     //#endregion
     
-})(breeze);
+})(breeze, window.todoApp.model);

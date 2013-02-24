@@ -1,25 +1,27 @@
-﻿(function (ko, datacontext) {
+﻿/* todoApp: application global namespace */
+window.todoApp = window.TodoApp || {};
 
-    var store = datacontext.metadataStore;
-    store.registerEntityTypeCtor("TodoItem", null, todoItemInitializer);
-    store.registerEntityTypeCtor("TodoList", TodoList, todoListInitializer);
+/* model: extend server-supplied metadata with client-side entity model members */
+window.todoApp.model = (function (ko) {
 
-    function todoItemInitializer(todoItem) {
-        todoItem.errorMessage = ko.observable();
-    }
+    var datacontext;
     
-    function todoListInitializer(todoList) {
+    var todoItemInitializer = function (todoItem) {
+        todoItem.errorMessage = ko.observable();
+    };
+
+    var todoListInitializer = function (todoList) {
         todoList.errorMessage = ko.observable();
         todoList.newTodoTitle = ko.observable();
         todoList.isEditingListTitle = ko.observable(false);
-    }
-    
-    function TodoList() {
-        this.title = "My todos";       // defaults
-        this.userId = "to be replaced";
-    }
+    };
 
-    TodoList.prototype.addTodo = function() {
+    var TodoList = function () {
+        this.title = "My todos"; // defaults
+        this.userId = "to be replaced";
+    };
+
+    TodoList.prototype.addTodo = function () {
         var todoList = this;
         var title = todoList.newTodoTitle();
         if (title) { // need a title to save
@@ -30,9 +32,20 @@
             datacontext.saveNewTodoItem(todoItem);
         }
     };
-    
+
     TodoList.prototype.deleteTodo = function () {
         return datacontext.deleteTodoItem(this); // "this" is the todoItem
     };
     
-})(ko, todoApp.datacontext);
+    var initializeModel = function (context) {
+        datacontext = context;
+        var store = datacontext.metadataStore;
+        store.registerEntityTypeCtor("TodoItem", null, todoItemInitializer);
+        store.registerEntityTypeCtor("TodoList", TodoList, todoListInitializer);
+    };
+
+    return {
+        initializeModel: initializeModel
+    };
+   
+})(ko);

@@ -32,8 +32,8 @@ namespace $safeprojectname$
 
 			bundles.Add(new ScriptBundle("~/bundles/todo").Include(
                 "~/app/todo.bindings.js",
-                "~/app/todo.datacontext.js",
                 "~/app/todo.model.js",
+                "~/app/todo.datacontext.js",
                 "~/app/todo.viewmodel.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
