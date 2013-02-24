@@ -2,13 +2,13 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="BreezeMvcSpa..c7e4af09-d368-4411-8eaa-bc493103fdf6" Version="1.0.0" Language="en-US" Publisher="IdeaBlade" />
-    <DisplayName>breezetemplate</DisplayName>
-    <Description xml:space="preserve">Adds ASP.NET MVC4 Single Page Application (SPA) template using Breeze for data management</Description>
+    <DisplayName>Breeze Knockout Spa Template</DisplayName>
+    <Description xml:space="preserve">Adds ASP.NET MVC4 Single Page Application (SPA) template using BreezeJS and KnockoutJS.</Description>
     <MoreInfo>http://www.breezejs.com/spa-template?utm_source=vsix</MoreInfo>
     <License>license.txt</License>
     <Icon>__VsixIcon.ico</Icon>
-    <PreviewImage>BreezeLogo125.png</PreviewImage>
-    <Tags>Breeze SPA MVC</Tags>
+    <PreviewImage>BreezeKoLogo.png</PreviewImage>
+    <Tags>Breeze Knockout SPA MVC</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
@@ -26,8 +26,8 @@
                Language="C#"
                ViewEngine="Razor"
                TemplateId="BreezeMvcSpaApplication"
-               Title="Breeze Single Page Application"
-               Description="An ASP.NET MVC 4 project for a single page application with Knockout and BreezeJS"
+               Title="Breeze Knockout SPA"
+               Description="An ASP.NET MVC 4 project for a single page application with BreezeJS and KnockoutJS"
                Version="4.0"/>
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\App_Start\AuthConfig.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\App_Start\BundleConfig.SinglePage.cs" />
@@ -47,11 +47,11 @@
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Models\TodoList.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Models\TodoRepository.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Properties\AssemblyInfo.cs" />
-    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\ajaxlogin.js" />
-    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.bindings.js" />
-    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.datacontext.js" />
-    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.model.js" />
-    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.viewmodel.js" />
+    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\ajaxlogin.js" />
+    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.bindings.js" />
+    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.datacontext.js" />
+    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.model.js" />
+    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.viewmodel.js" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\_references.SinglePage.js" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\breeze.savequeuing.js" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Account\_ChangePasswordPartial.SinglePage.cshtml" />

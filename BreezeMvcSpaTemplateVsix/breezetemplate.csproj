@@ -42,7 +42,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="BreezeLogo125.png">
+    <Content Include="BreezeKoLogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -238,23 +238,23 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\ajaxlogin.js">
+    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\ajaxlogin.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.bindings.js">
+    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.bindings.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.datacontext.js">
+    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.datacontext.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.model.js">
+    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.model.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Scripts\app\todo.viewmodel.js">
+    <Content Include="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\app\todo.viewmodel.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

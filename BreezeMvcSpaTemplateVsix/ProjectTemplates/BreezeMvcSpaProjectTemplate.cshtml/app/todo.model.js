@@ -10,8 +10,8 @@
     
     function todoListInitializer(todoList) {
         todoList.errorMessage = ko.observable();
-        todoList.isEditingListTitle = ko.observable(false);
         todoList.newTodoTitle = ko.observable();
+        todoList.isEditingListTitle = ko.observable(false);
     }
     
     function TodoList() {

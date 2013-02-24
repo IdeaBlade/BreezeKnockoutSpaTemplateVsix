@@ -22,7 +22,7 @@ namespace $safeprojectname$
                         "~/Scripts/knockout-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/ajaxlogin").Include(
-                "~/Scripts/app/ajaxlogin.js"));
+                "~/app/ajaxlogin.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/breeze").Include(
                         "~/Scripts/q.js",
@@ -31,10 +31,10 @@ namespace $safeprojectname$
                         "~/Scripts/breeze.savequeuing.js"));
 
 			bundles.Add(new ScriptBundle("~/bundles/todo").Include(
-                "~/Scripts/app/todo.bindings.js",
-                "~/Scripts/app/todo.datacontext.js",
-                "~/Scripts/app/todo.model.js",
-                "~/Scripts/app/todo.viewmodel.js"));
+                "~/app/todo.bindings.js",
+                "~/app/todo.datacontext.js",
+                "~/app/todo.model.js",
+                "~/app/todo.viewmodel.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

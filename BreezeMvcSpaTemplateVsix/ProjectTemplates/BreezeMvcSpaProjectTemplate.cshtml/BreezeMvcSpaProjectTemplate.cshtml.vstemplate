@@ -28,13 +28,20 @@
             <Folder Name="Properties" TargetFolderName="Properties">
                 <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
             </Folder>
+            <Folder Name="app" TargetFolderName="app">
+              <ProjectItem ReplaceParameters="false" TargetFileName="ajaxlogin.js">ajaxlogin.js</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="todo.viewmodel.js">todo.viewmodel.js</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="todo.datacontext.js">todo.datacontext.js</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="todo.bindings.js">todo.bindings.js</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="todo.model.js">todo.model.js</ProjectItem>
+            </Folder>          
             <Folder Name="App_Data" TargetFolderName="App_Data" />
             <Folder Name="App_Start" TargetFolderName="App_Start">
                 <ProjectItem ReplaceParameters="true" TargetFileName="AuthConfig.cs">AuthConfig.cs</ProjectItem>
                 <ProjectItem ReplaceParameters="true" TargetFileName="BundleConfig.cs">BundleConfig.SinglePage.cs</ProjectItem>
                 <ProjectItem ReplaceParameters="true" TargetFileName="FilterConfig.cs">FilterConfig.cs</ProjectItem>
                 <ProjectItem ReplaceParameters="true" TargetFileName="RouteConfig.cs">RouteConfig.cs</ProjectItem>
-				<ProjectItem ReplaceParameters="true" TargetFileName="WebApiConfig.cs">WebApiConfig.SinglePage.cs</ProjectItem>
+				        <ProjectItem ReplaceParameters="true" TargetFileName="WebApiConfig.cs">WebApiConfig.SinglePage.cs</ProjectItem>
             </Folder> 
             <Folder Name="Areas" TargetFolderName="Areas">
                 <Folder Name="HelpPage" TargetFolderName="HelpPage">
@@ -63,17 +70,10 @@
                 <ProjectItem ReplaceParameters="true" TargetFileName="TodoItem.cs">TodoItem.cs</ProjectItem>
                 <ProjectItem ReplaceParameters="true" TargetFileName="TodoItemContext.cs">TodoItemContext.cs</ProjectItem>
                 <ProjectItem ReplaceParameters="true" TargetFileName="TodoRepository.cs">TodoRepository.cs</ProjectItem>
-			</Folder>
+			      </Folder>
             <Folder Name="Scripts" TargetFolderName="Scripts">
                 <ProjectItem ReplaceParameters="false" TargetFileName="_references.js">_references.SinglePage.js</ProjectItem>
                 <ProjectItem ReplaceParameters="false" TargetFileName="breeze.savequeuing.js">breeze.savequeuing.js</ProjectItem>
-                <Folder Name="app" TargetFolderName="app">
-                    <ProjectItem ReplaceParameters="false" TargetFileName="ajaxlogin.js">ajaxlogin.js</ProjectItem>
-                    <ProjectItem ReplaceParameters="false" TargetFileName="todo.viewmodel.js">todo.viewmodel.js</ProjectItem>
-                    <ProjectItem ReplaceParameters="false" TargetFileName="todo.datacontext.js">todo.datacontext.js</ProjectItem>
-                    <ProjectItem ReplaceParameters="false" TargetFileName="todo.bindings.js">todo.bindings.js</ProjectItem>
-                    <ProjectItem ReplaceParameters="false" TargetFileName="todo.model.js">todo.model.js</ProjectItem>
-                </Folder>
             </Folder>
             <Folder Name="Views" TargetFolderName="Views">
                 <Folder Name="Account" TargetFolderName="Account">

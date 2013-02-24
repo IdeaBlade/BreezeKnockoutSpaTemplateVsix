@@ -16,7 +16,7 @@
     <section id="lists" data-bind="foreach: todoLists, visible: todoLists().length > 0">
         <article class="todoList">
             <header>
-                <form data-bind="validate: true">
+                <form>
                     <input data-bind="value: title,
                                       selected: isEditingListTitle,
                                       blurOnEnter: true,
@@ -76,7 +76,6 @@ else
 {
     @section scripts {
         @Scripts.Render("~/bundles/knockout")
-        @Scripts.Render("~/bundles/jqueryval")
         @Scripts.Render("~/bundles/breeze")
         @Scripts.Render("~/bundles/todo")
     }

@@ -258,16 +258,16 @@
     <Content Include="Web.Release.config">                                                                                                                                                
       <DependentUpon>Web.config</DependentUpon>                                                                                                                                           
     </Content>
+    <Content Include="app\ajaxlogin.js" />
+    <Content Include="app\todo.viewmodel.js" />
+    <Content Include="app\todo.bindings.js" />
+    <Content Include="app\todo.datacontext.js" />
+    <Content Include="app\todo.model.js" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />                                                                                                                                                                                   
     <Content Include="Content\Site.css" />
     <Content Include="Content\TodoList.css" /> 
     <Content Include="Scripts\_references.js" />
-    <Content Include="Scripts\breeze.savequeuing.js" />
-    <Content Include="Scripts\app\ajaxlogin.js" />
-    <Content Include="Scripts\app\todo.viewmodel.js" />
-    <Content Include="Scripts\app\todo.bindings.js" />
-    <Content Include="Scripts\app\todo.datacontext.js" />
-    <Content Include="Scripts\app\todo.model.js" />                                                                                                                                         
+    <Content Include="Scripts\breeze.savequeuing.js" />                                                                                                                                   
     <Content Include="Views\_ViewStart.cshtml" />                                                                                                                                         
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />                                                                                                                     
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />                                                                                                                 
