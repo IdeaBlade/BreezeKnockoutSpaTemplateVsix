@@ -61,6 +61,7 @@
             </Folder>
             <Folder Name="Filters" TargetFolderName="Filters">
                 <ProjectItem ReplaceParameters="true" TargetFileName="InitializeSimpleMembershipAttribute.cs">InitializeSimpleMembershipAttribute.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="ValidateHttpAntiForgeryTokenAttribute.cs">ValidateHttpAntiForgeryTokenAttribute.cs</ProjectItem>
             </Folder>
             <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
             <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>

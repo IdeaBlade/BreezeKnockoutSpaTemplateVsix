@@ -1,8 +1,7 @@
 ﻿/* datacontext: data access and model management layer */
-window.todoApp.datacontext = (function (breeze, model) {
+window.todoApp.datacontext = (function ($, breeze, model) {
 
-    breeze.NamingConvention.camelCase.setAsDefault();
-
+    configureBreeze();
     var manager = new breeze.EntityManager("api/Todo");
     manager.enableSaveQueuing(true);
     configureManagerToSaveModifiedItemImmediately();
@@ -103,6 +102,22 @@ window.todoApp.datacontext = (function (breeze, model) {
         }
     }
     
+    function configureBreeze() {
+        // configure to use camelCase
+        breeze.NamingConvention.camelCase.setAsDefault();
+
+        // configure to resist CSRF attack
+        var antiForgeryToken = $("#antiForgeryToken").val();
+        if (antiForgeryToken) {
+            // get the current default Breeze AJAX adapter & add header
+            var ajaxAdapter = breeze.config.getAdapterInstance("ajax");
+            ajaxAdapter.defaultSettings = {
+                headers: {
+                    'RequestVerificationToken': antiForgeryToken
+                },
+            };
+        }
+    }
     function configureManagerToSaveModifiedItemImmediately() {
         manager.entityChanged.subscribe(entityStateChanged);
         
@@ -117,4 +132,4 @@ window.todoApp.datacontext = (function (breeze, model) {
     }   
     //#endregion
     
-})(breeze, window.todoApp.model);
+})($, breeze, window.todoApp.model);

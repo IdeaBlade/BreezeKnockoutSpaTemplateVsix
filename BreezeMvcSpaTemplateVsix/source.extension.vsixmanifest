@@ -41,6 +41,7 @@
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Controllers\HomeController.SinglePage.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Controllers\TodoController.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Filters\ValidateHttpAntiForgeryTokenAttribute.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Models\AccountModels.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Models\TodoItem.cs" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Models\TodoItemContext.cs" />

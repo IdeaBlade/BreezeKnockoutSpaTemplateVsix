@@ -2,6 +2,14 @@
 @{
     ViewBag.Title = "My $safeprojectname$ Todo Lists";
 }
+@functions{
+    public string GetAntiForgeryToken()
+    {
+        string cookieToken, formToken;
+        AntiForgery.GetTokens(null, out cookieToken, out formToken);
+        return cookieToken + ":" + formToken;                
+    }
+}
 
 <header>
     <h1>@ViewBag.Title</h1>
@@ -50,6 +58,7 @@
             <p class="error" data-bind="visible: errorMessage, text: errorMessage"></p>
         </article>
     </section>
+    <input id="antiForgeryToken" type="hidden" value="@GetAntiForgeryToken()" />    
 }
 else
 {

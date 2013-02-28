@@ -2,6 +2,7 @@
     using System.Linq;
     using System.Web.Http;
     using Breeze.WebApi;
+    using Filters;
     using Models;
     using Newtonsoft.Json.Linq;
 
@@ -23,6 +24,7 @@
 
         // POST ~/api/Todo/SaveChanges
         [HttpPost]
+        [ValidateHttpAntiForgeryToken]
         public SaveResult SaveChanges(JObject saveBundle) {
             return _repository.SaveChanges(saveBundle);
         }
