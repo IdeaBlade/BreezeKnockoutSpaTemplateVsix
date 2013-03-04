@@ -96,7 +96,7 @@
     SaveQueuing.prototype.innerSaveChanges = function (args) {
         var self = this;
         return self.baseSaveChanges.apply(self.entityManager, args)
-            .then(function (saveResult) { self.saveSucceeded(saveResult); })
+            .then(function (saveResult) { return self.saveSucceeded(saveResult); })
             .fail(function (error) { self.saveFailed(error); });
     };
 
@@ -105,7 +105,7 @@
     SaveQueuing.prototype.saveFailed = defaultSaveFailed;
     SaveQueuing.prototype.QueuedSaveFailedError = QueuedSaveFailedError;
 
-    function defaultSaveSucceeded() {
+    function defaultSaveSucceeded(saveResult) {
         var saveQueuing = this;
         var deferredSave = saveQueuing.saveQueue.shift();
         if (deferredSave) {
@@ -114,6 +114,7 @@
         if (saveQueuing.saveQueue.length === 0) {
             saveQueuing.isSaving = false;
         }
+        return saveResult;
     };
 
     function defaultSaveFailed(error) {
