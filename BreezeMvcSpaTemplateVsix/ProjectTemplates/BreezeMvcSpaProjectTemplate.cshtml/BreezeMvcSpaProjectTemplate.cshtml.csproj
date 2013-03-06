@@ -281,7 +281,8 @@
     <Content Include="Views\Shared\_UserSettings.cshtml" />                                                                                                                               
     <Content Include="Views\Shared\_Layout.cshtml" />                                                                                                                                     
     <Content Include="Views\Web.config" />                                                                                                                                                
-    <Content Include="Views\Home\Index.cshtml" />                                                                                                                                         
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_Authentication.cshtml" />
     <Content Include="Views\Home\_Login.cshtml" />                                                                                                                                      
     <Content Include="Views\Home\_Register.cshtml" />                                                                                                                                     
   </ItemGroup>

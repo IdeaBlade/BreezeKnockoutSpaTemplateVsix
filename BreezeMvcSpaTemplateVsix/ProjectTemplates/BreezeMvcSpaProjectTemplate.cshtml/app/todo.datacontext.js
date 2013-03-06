@@ -17,7 +17,7 @@ window.todoApp.datacontext = (function ($, breeze, model) {
         deleteTodoList: deleteTodoList
     };
 
-    model.initializeModel(datacontext);
+    model.initialize(datacontext);
     return datacontext;
 
     //#region Private Members

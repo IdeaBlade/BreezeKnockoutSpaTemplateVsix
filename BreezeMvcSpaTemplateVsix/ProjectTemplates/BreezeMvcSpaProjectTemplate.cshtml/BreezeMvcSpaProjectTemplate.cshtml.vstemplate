@@ -89,6 +89,7 @@
                 </Folder>
                 <Folder Name="Home" TargetFolderName="Home">
                     <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.SinglePage.cshtml</ProjectItem>
+                    <ProjectItem ReplaceParameters="true" TargetFileName="_Authentication.cshtml">_Authentication.cshtml</ProjectItem>
                     <ProjectItem ReplaceParameters="true" TargetFileName="_Login.cshtml">_Login.cshtml</ProjectItem>
                     <ProjectItem ReplaceParameters="true" TargetFileName="_Register.cshtml">_Register.cshtml</ProjectItem>
                 </Folder>

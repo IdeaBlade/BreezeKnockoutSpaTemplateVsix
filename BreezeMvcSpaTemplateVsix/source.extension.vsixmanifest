@@ -63,6 +63,7 @@
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Account\ExternalLoginFailure.cshtml" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Account\Login.cshtml" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Account\Manage.SinglePage.cshtml" />
+    <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Home\_Authentication.cshtml" />    
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Home\_Login.cshtml" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Home\_Register.cshtml" />
     <Asset Type="Microsoft.VisualStudio.Mvc.Templates" d:Source="File" Path="ProjectTemplates\BreezeMvcSpaProjectTemplate.cshtml\Views\Home\Index.SinglePage.cshtml" />
