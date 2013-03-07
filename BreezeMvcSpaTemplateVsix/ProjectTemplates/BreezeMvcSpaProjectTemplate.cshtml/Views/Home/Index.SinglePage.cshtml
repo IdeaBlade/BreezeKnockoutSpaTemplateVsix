@@ -57,8 +57,7 @@
 
             <p class="error" data-bind="visible: errorMessage, text: errorMessage"></p>
         </article>
-    </section>
-    <input id="antiForgeryToken" type="hidden" value="@GetAntiForgeryToken()" />    
+    </section>  
 }
 else
 {
@@ -68,6 +67,8 @@ else
 
 @if (@User.Identity.IsAuthenticated)
 {
+    <input id="antiForgeryToken" type="hidden" value="@GetAntiForgeryToken()" />      
+    
     @section scripts {
         @Scripts.Render("~/bundles/knockout")
         @Scripts.Render("~/bundles/breeze")
