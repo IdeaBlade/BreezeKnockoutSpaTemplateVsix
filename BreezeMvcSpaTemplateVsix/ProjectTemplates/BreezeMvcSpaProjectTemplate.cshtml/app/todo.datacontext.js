@@ -37,7 +37,7 @@ window.todoApp.datacontext = (function ($, breeze, model) {
             errorObservable("Error retrieving todo lists: " + error.message);
         }
     }
-    
+
     function createTodoItem() {
         return manager.createEntity("TodoItem");
     }
@@ -53,16 +53,16 @@ window.todoApp.datacontext = (function ($, breeze, model) {
     function saveNewTodoList(todoList) {
         return saveEntity(todoList);
     }
-    
+
     function deleteTodoItem(todoItem) {
         todoItem.entityAspect.setDeleted();
         return saveEntity(todoItem);
     }
-    
-    function deleteTodoList(todoList) {       
+
+    function deleteTodoList(todoList) {
         // Neither breeze nor server cascade deletes so we have to do it
         var todoItems = todoList.todos().slice(); // iterate over copy
-        todoItems.forEach(function(entity) { entity.entityAspect.setDeleted(); });
+        todoItems.forEach(function (entity) { entity.entityAspect.setDeleted(); });
         todoList.entityAspect.setDeleted();
         return saveEntity(todoList);
     }
@@ -72,33 +72,38 @@ window.todoApp.datacontext = (function ($, breeze, model) {
         return manager.saveChanges().fail(saveFailed);
 
         function saveFailed(error) {
-            setErrorMessage(error);
-            // Let user see invalid value briefly before reverting"
-            setTimeout(function() { manager.rejectChanges(); }, 1000);
+            var msg = "Error saving " +
+                describeSaveOperation(masterEntity) + ": " +
+                getErrorMessage(error);
+
+            masterEntity.errorMessage(msg);
+            // Let user see invalid value briefly before reverting
+            setTimeout(function () { manager.rejectChanges(); }, 1000);
             throw error; // so caller can see failure
         }
+    }
 
-        function setErrorMessage(error) {
-            var statename = masterEntity.entityAspect.entityState.name.toLowerCase();
-            var typeName = masterEntity.entityType.shortName;
-            var msg = "Error saving " + statename + " " + typeName + ": ";
-
-            var reason = error.message;
-
-            if (reason.match(/validation error/i)) {
-                reason = getValidationErrorMessage(error);
-            }
-            masterEntity.errorMessage(msg + reason);
+    function describeSaveOperation(entity) {
+        var statename = entity.entityAspect.entityState.name.toLowerCase();
+        var typeName = entity.entityType.shortName;
+        var title = entity.title && entity.title();
+        title = title ? (" '" + title + "'") : "";
+        return statename + " " + typeName + title;
+    }
+    function getErrorMessage(error) {
+        var reason = error.message;
+        if (reason.match(/validation error/i)) {
+            reason = getValidationErrorMessage(error);
         }
-
-        function getValidationErrorMessage(error) {
-            try { // return the first error message
-                var firstItem = error.entitiesWithErrors[0];
-                var firstError = firstItem.entityAspect.getValidationErrors()[0];
-                return firstError.errorMessage;
-            } catch(e) { // ignore problem extracting error message 
-                return "validation error";
-            }
+        return reason;
+    }
+    function getValidationErrorMessage(error) {
+        try { // return the first error message
+            var firstItem = error.entitiesWithErrors[0];
+            var firstError = firstItem.entityAspect.getValidationErrors()[0];
+            return firstError.errorMessage;
+        } catch (e) { // ignore problem extracting error message 
+            return "validation error";
         }
     }
     
@@ -120,7 +125,7 @@ window.todoApp.datacontext = (function ($, breeze, model) {
     }
     function configureManagerToSaveModifiedItemImmediately() {
         manager.entityChanged.subscribe(entityStateChanged);
-        
+
         function entityStateChanged(args) {
             if (args.entityAction === breeze.EntityAction.EntityStateChange) {
                 var entity = args.entity;
@@ -129,7 +134,7 @@ window.todoApp.datacontext = (function ($, breeze, model) {
                 }
             }
         }
-    }   
+    }
     //#endregion
-    
+
 })($, breeze, window.todoApp.model);
