@@ -2,7 +2,7 @@
 window.todoApp.datacontext = (function ($, breeze, model) {
 
     configureBreeze();
-    var manager = new breeze.EntityManager("api/Todo");
+    var manager = new breeze.EntityManager("breeze/Todo");
     manager.enableSaveQueuing(true);
     configureManagerToSaveModifiedItemImmediately();
 

@@ -16,20 +16,20 @@
             _repository = new TodoRepository(User);
         }
 
-        // GET ~/api/Todo/Metadata 
+        // GET ~/breeze/Todo/Metadata 
         [HttpGet]
         public string Metadata() {
             return _repository.Metadata();
         }
 
-        // POST ~/api/Todo/SaveChanges
+        // POST ~/breeze/Todo/SaveChanges
         [HttpPost]
         [ValidateHttpAntiForgeryToken]
         public SaveResult SaveChanges(JObject saveBundle) {
             return _repository.SaveChanges(saveBundle);
         }
 
-        // GET ~/api/Todo/TodoList
+        // GET ~/breeze/Todo/TodoList
         [HttpGet]
         public IQueryable<TodoList> TodoLists() {
             return _repository.TodoLists;
